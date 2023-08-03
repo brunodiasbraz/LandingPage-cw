@@ -98,7 +98,73 @@ html, body{
     height: 350px;
 }
 
-.organizacoes-usando{
+.principais-recursos{
     background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    flex-direction: column;
+    gap: 8px;
+}
 
+.principais-recursos h1{
+    font-size: 30px;
+}
+
+.subtitulo-desc{
+    /* margin-top: -10px; */
+    font-size: 18px;
+}
+
+.pricipais-recursos-elementos{
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.pricipais-recursos-elementos div{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    margin: 0px 15px;
+    justify-content: space-around;
+    align-items: center;
+    width: 252px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
+    padding: 35px;
+}
+
+.pricipais-recursos-elementos p{
+    text-align: center;
+}
+
+.pricipais-recursos-elementos span{
+    text-align: center;
+    padding: 20px;
+}
+
+.p-r-e-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-tres{
+    background-color: white;
+    margin-top: -50px;
+}
+
+.conteudo-tres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.img-conteudo-tres{
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.055);
+    margin-bottom: 100px;
 }
