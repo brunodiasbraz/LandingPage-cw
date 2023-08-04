@@ -4,6 +4,8 @@
     --dark: rgb(51, 51, 51);
 }
 
+/* background: linear-gradient( to bottom, white 50%, transparent); */
+
 * {
     margin: 0;
     margin: 0;
@@ -12,9 +14,8 @@
 }
 html, body{
     font-family: 'Poppins', sans-serif;
-    animation: gradient-2438bf9c 10s ease infinite;
     background-image: url(./assets/download.png);
-    background-size: 125% 125%;
+    background-size: 100% auto;
     color: var(--dark);
 }
 
@@ -95,7 +96,7 @@ html, body{
 }
 
 .img-conteudo-um {
-    height: 350px;
+    height: 330px;
 }
 
 .principais-recursos{
@@ -103,6 +104,8 @@ html, body{
     display: flex;
     align-items: center;
     padding: 60px;
+    max-width: 100%;
+    height: auto;
     flex-direction: column;
     gap: 8px;
 }
@@ -116,43 +119,80 @@ html, body{
     font-size: 18px;
 }
 
-.pricipais-recursos-elementos{
+.pricipais-recursos-elementos{    /* Carousel */
+    max-width: 1650px;
+    margin: 0 0;
+    overflow: hidden;
     display: flex;
-    margin: 15px;
-    gap: 15px;
-    padding-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    gap: 60px 30px;
+    padding: 35px 0px;
 }
 
-.pricipais-recursos-elementos div{
+.carousel__items{
+    display: flex;
+    animation: carousel 60s linear infinite;
+}
+
+.carousel__card{
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    /* new */
+    flex-direction: column;
+    margin: 0px 15px;
+    justify-content: space-around;
+    align-items: center;
+    width: 222px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
+    padding: 35px;
+
+}
+@keyframes carousel{
+    100%{
+        transform: translate(-2560px);
+    }
+}
+
+/* .pricipais-recursos-elementos div{
     display: flex;
     background-color: white;
     flex-direction: column;
     margin: 0px 15px;
     justify-content: space-around;
     align-items: center;
-    width: 252px;
+    width: 222px;
     height: auto;
     border-radius: 20px;
     box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
     padding: 35px;
-}
+} */
 
 .pricipais-recursos-elementos p{
     text-align: center;
 }
 
-.pricipais-recursos-elementos span{
+.p-r-e-icon{
+    padding-bottom: 10px;
     text-align: center;
-    padding: 20px;
 }
 
 .p-r-e-titulo{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.p-r-e-desc{
+    font-size: 14px;
 }
 
 .main-tres{
-    background-color: white;
     margin-top: -50px;
 }
 
