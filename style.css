@@ -2,6 +2,8 @@
 
 :root{
     --dark: rgb(51, 51, 51);
+    --azul: rgb(56, 132, 255);
+    --box-shadow: 4px 5px 11px rgba(56, 132, 255, 0.4);
 }
 
 /* background: linear-gradient( to bottom, white 50%, transparent); */
@@ -14,10 +16,16 @@
 }
 html, body{
     font-family: 'Poppins', sans-serif;
+    color: var(--dark);
     background-image: url(./assets/download.png);
     background-size: 100% auto;
-    color: var(--dark);
 }
+
+/* header{
+    position: sticky;   
+    top: 0; 
+    z-index: 999px;
+} */
 
 .navbar{
     display: flex;
@@ -37,15 +45,15 @@ html, body{
     flex-direction: row;
     gap: 30px;
     align-items: center;
-    color: var(--dark);;
+    color: var(--dark);
 }
 
 .btn-navbar{
-    background: rgb(56, 132, 255);
+    background: var(--azul);
     width: 130px;
     height: 35px;
     border: none;
-    box-shadow: 4px 5px 11px rgba(56, 132, 255, 0.4);
+    box-shadow: var(--box-shadow);
     border-radius: 7px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
@@ -62,7 +70,7 @@ html, body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 100px 150px;
+    padding: 70px 210px;
     justify-content: space-around;
     margin-bottom: 30px;
 }
@@ -83,11 +91,11 @@ html, body{
 } /* Subtítulo do main */ 
 
 .btn-conteudo-um{
-    background: rgb(56, 132, 255);
+    background: var(--azul);
     width: 180px;
     height: 50px;
     border: none;
-    box-shadow: 4px 5px 11px rgba(56, 132, 255, 0.541);
+    box-shadow: var(--box-shadow);
     border-radius: 10px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
@@ -96,14 +104,14 @@ html, body{
 }
 
 .img-conteudo-um {
-    height: 330px;
+    height: 420px;
 }
 
 .principais-recursos{
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 60px;
+    padding: 40px 60px;
     max-width: 100%;
     height: auto;
     flex-direction: column;
@@ -158,27 +166,18 @@ html, body{
     }
 }
 
-/* .pricipais-recursos-elementos div{
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    margin: 0px 15px;
-    justify-content: space-around;
-    align-items: center;
-    width: 222px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
-    padding: 35px;
-} */
-
 .pricipais-recursos-elementos p{
     text-align: center;
 }
 
 .p-r-e-icon{
-    padding-bottom: 10px;
+    padding: 18px;
+    border-radius: 50px;
     text-align: center;
+    background-color: var(--azul);
+    color: white;
+    box-shadow: var(--box-shadow);
+    
 }
 
 .p-r-e-titulo{
@@ -193,7 +192,12 @@ html, body{
 }
 
 .main-tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     margin-top: -50px;
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 .conteudo-tres{
@@ -205,6 +209,56 @@ html, body{
 
 .img-conteudo-tres{
     border-radius: 20px;
-    border: 3px solid rgba(0, 0, 0, 0.055);
-    margin-bottom: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.055);
 }
+
+.img-conteudo-tres:hover{
+    border: 10px solid rgba(39, 78, 255, 0.055);
+    transition: 200ms linear;
+}
+
+.btn-conteudo-tres{
+    background: var(--azul);
+    width: 230px;
+    height: 40px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.painel-metricas h1{
+    padding-bottom: 8%;
+}
+
+.painel-graficos{
+    display: flex;
+    
+}
+
+.item-painel{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.conteudo-painel{
+    display: flex;
+    object-fit: cover;
+    background-color: white;
+    /* new */
+    flex-direction: column;
+    margin: 0px 15px;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
+    padding: 35px;
+}
+
