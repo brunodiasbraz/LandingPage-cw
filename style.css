@@ -70,7 +70,7 @@ html, body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 70px 210px;
+    padding: 70px 180px;
     justify-content: space-around;
     margin-bottom: 30px;
 }
@@ -104,14 +104,14 @@ html, body{
 }
 
 .img-conteudo-um {
-    height: 420px;
+    height: 360px;
 }
 
 .principais-recursos{
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 40px 60px;
+    padding: 40px 0px;
     max-width: 100%;
     height: auto;
     flex-direction: column;
@@ -128,8 +128,7 @@ html, body{
 }
 
 .pricipais-recursos-elementos{    /* Carousel */
-    max-width: 1650px;
-    margin: 0 0;
+    max-width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -151,7 +150,6 @@ html, body{
     /* new */
     flex-direction: column;
     margin: 0px 15px;
-    justify-content: space-around;
     align-items: center;
     width: 222px;
     height: auto;
@@ -162,7 +160,7 @@ html, body{
 }
 @keyframes carousel{
     100%{
-        transform: translate(-2560px);
+        transform: translateX(-2560px);
     }
 }
 
@@ -231,34 +229,118 @@ html, body{
 }
 
 .painel-metricas h1{
-    padding-bottom: 8%;
+    padding: 2%;
+    color: white;
 }
 
-.painel-graficos{
+.painel-metricas{
+    background-image: url(./assets/Frame.svg);
+    width: 100%;
     display: flex;
-    
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15%;
 }
 
-.item-painel{
+.container-metricas{
     display: flex;
     flex-direction: row;
-    align-items: top;
-    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 5%;
 }
-
-.conteudo-painel{
+.cont-conteiner{
     display: flex;
-    object-fit: cover;
-    background-color: white;
-    /* new */
     flex-direction: column;
-    margin: 0px 15px;
-    justify-content: space-around;
-    align-items: baseline;
-    width: 350px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
-    padding: 35px;
+    /* background-color: blueviolet; */
 }
 
+.cont-conteiner p{
+    padding: 10px 0;
+    width: 70%;
+}
+
+.items-cont-conteiner{
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+    padding: 0% 0; 
+    justify-content: space-between ;
+}
+
+.items-cont-conteiner span{
+    padding-right: 70px;
+    padding-top: 30px;
+}
+
+.items-cont-conteiner img{
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.171);;
+}
+
+.icons-cont-container{
+    color: var(--azul);
+    padding-top: 30px;
+}
+
+.main-quatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-quatro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6%;
+    margin: 0 9%;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: linear-gradient(136deg, #010206 0%, #14265A 60.83%, #1D3884 100%);
+}
+
+.lojas-apps{
+    display: flex;
+    gap: 20px;
+    padding-top: 4%;
+    cursor: pointer;
+}
+
+.texto-conteudo-quatro{
+    padding: 3% 0;
+}
+
+.img-celular{
+    margin-top: 15%;
+}
+
+.texto-conteudo-quatro h1{
+    background: linear-gradient(116deg, #00E5F7 0.67%, #1E95FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3%;
+    font-size: 26px;
+}
+
+.texto-conteudo-quatro p{
+    color: white;
+    padding-right: 40%;
+}
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    height: 200px;
+}
