@@ -21,12 +21,6 @@ html, body{
     background-size: 100% auto;
 }
 
-/* header{
-    position: sticky;   
-    top: 0; 
-    z-index: 999px;
-} */
-
 .navbar{
     display: flex;
     flex-direction: row;
@@ -340,11 +334,68 @@ html, body{
     padding-right: 40%;
 }
 
+/*-----------------------------------------------------------------------------------------------------*/
 
+.main-cinco{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 5% 0;
+}
 
+.subtitulo-planos{
+    font-size: 18px;
+}
 
+.nossos-planos_items{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
 
+.planos_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: #00eeff; */
+    padding: 5%;
+    
+}
+.div-servicos-disponiveis{
+    display: flex;
+    /* background-color: #8aa9ff; */
+    gap: 5%;
+    justify-content: space-around;
+    width: 300px;
+    padding: 10% 0;
+}
 
+.div-servicos-disponiveis span{
+    display: flex;
+    align-items: center;
+}
+
+.servicos-disponiveis{
+    font-size: 18px;
+    width: 250px;
+    text-align: center; 
+}
+
+.icones-card-planos{
+    margin-left: 6%;
+}
+
+.card-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-desc{
+    font-size: 30px;
+    text-align: center;
+}
 
 
 footer{
