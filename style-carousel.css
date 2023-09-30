@@ -48,6 +48,10 @@
     }
 }
 
+.carousel__items:hover{
+    animation-play-state: paused;
+}
+
 .pricipais-recursos-elementos p{
     text-align: center;
 }
