@@ -19,6 +19,7 @@ html, body{
     color: var(--dark);
     background-image: url(./assets/download.png);
     background-size: 100% auto;
+    
 }
 
 .navbar{
@@ -106,81 +107,10 @@ html, body{
     display: flex;
     align-items: center;
     padding: 40px 0px;
-    max-width: 100%;
+    max-width: auto;
     height: auto;
     flex-direction: column;
     gap: 8px;
-}
-
-.principais-recursos h1{
-    font-size: 30px;
-}
-
-.subtitulo-desc{
-    /* margin-top: -10px; */
-    font-size: 18px;
-}
-
-.pricipais-recursos-elementos{    /* Carousel */
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    gap: 60px 30px;
-    padding: 35px 0px;
-}
-
-.carousel__items{
-    display: flex;
-    animation: carousel 60s linear infinite;
-}
-
-.carousel__card{
-    display: flex;
-    object-fit: cover;
-    background-color: white;
-    /* new */
-    flex-direction: column;
-    margin: 0px 15px;
-    align-items: center;
-    width: 222px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 4px 5px 11px rgba(83, 83, 83, 0.384);
-    padding: 35px;
-
-}
-@keyframes carousel{
-    100%{
-        transform: translateX(-2560px);
-    }
-}
-
-.pricipais-recursos-elementos p{
-    text-align: center;
-}
-
-.p-r-e-icon{
-    padding: 18px;
-    border-radius: 50px;
-    text-align: center;
-    background-color: var(--azul);
-    color: white;
-    box-shadow: var(--box-shadow);
-    
-}
-
-.p-r-e-titulo{
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    padding: 20px 30px;
-}
-
-.p-r-e-desc{
-    font-size: 14px;
 }
 
 .main-tres{
@@ -259,12 +189,11 @@ html, body{
     display: flex;
     flex-direction: row;
     /* background-color: brown; */
-    padding: 0% 0; 
-    justify-content: space-between ;
+    justify-content: space-around ;
+    gap: 1%;
 }
 
 .items-cont-conteiner span{
-    padding-right: 70px;
     padding-top: 30px;
 }
 
@@ -296,6 +225,11 @@ html, body{
     background: linear-gradient(136deg, #010206 0%, #14265A 60.83%, #1D3884 100%);
 }
 
+.img-conteudo-quatro{
+    display: flex;
+    align-items: end;
+}
+
 .lojas-apps{
     display: flex;
     gap: 20px;
@@ -307,9 +241,18 @@ html, body{
     display: flex;
     width: 100%;
     flex-direction: row;
-    padding: 0 15%;
+    padding: 0 20%;
     align-items: center;
-    
+}
+
+.conteudo-suporte h1{
+    font-size: 30px;
+    padding: 3% 10%;
+}
+
+.conteudo-suporte p{
+    font-size: 20px;
+    padding: 0 10%;
 }
 
 .texto-conteudo-quatro{
@@ -369,7 +312,7 @@ html, body{
     gap: 5%;
     justify-content: space-around;
     width: 300px;
-    padding: 10% 0;
+    padding: 1% 0;
 }
 
 .div-servicos-disponiveis span{
