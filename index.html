@@ -7,35 +7,55 @@
     <script src="https://kit.fontawesome.com/a09902a69e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-carousel.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Chathub • Bem-vindo à mudança.</title>
 </head>
 <body>
-    <script src="livechat.js"></script>
-    <header class="navbar">
-        <img class="navbar-imagem" src="./assets/logo.svg" alt="Logo Chatwoot">
-        <nav class="navbar-conteudo">
-            <a>Sobre nós</a>
-            <a>Planos</a>
-            <a>Integrações</a>
-            <a href="https://www.chatwoot.com/docs/product/" target="_blank">Guia do Usuário</a>
-            <a href="https://chat.uaiz.app.br" target="_blank"><button class="btn-navbar">Teste Grátis</button></a>
+    <header>
+        <nav class="navbar px-5 navbar-expand-lg">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#">
+                <img class="navbar-imagem" src="./assets/logo.svg" alt="Logo" width="130" height="auto">
+              </a>
+              <div class="navbar" id="navbar">
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" >Planos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Integrações</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.chatwoot.com/docs/product/" target="_blank">Guia do Usuário</a>
+                  </li>
+                </ul>
+                  <a class="btn btn-primary" role="button" href="https://chat.uaiz.app.br">Teste Grátis</a>
+              </div>
+            </div>
         </nav>
     </header>
-    <main class="conteudo">
-        <section class="conteudo-um">
-            <div class="conteudo-um-texto">
+
+    <div class="container-fluid px-5 row align-items-center">
+        <div class="col">
+            <div class="col " style="padding-left: 15%;">
                 <h1>A solução ideal para sua empresa</h1>
-                <p><strong>Simplifique</strong> a comunicação entre seus atendentes e clientes.</p>
-                <button class="btn-conteudo-um">Saiba mais!</button>
+                <p class="mt-4 mb-4 fs-5 col-9"><strong>Simplifique</strong> a comunicação entre seus atendentes e clientes.</p>
+                <a class="btn btn-outline-primary btn-lg" role="button" href="#" style="width: 180px; height: 50px">Saiba mais!</a>
             </div>
-            <img class="img-conteudo-um" src="./assets/Teste.svg" alt="aqui uma imagem">
-        </section>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="./assets/Teste.svg" alt="aqui uma imagem">
+        </div>
+    </div>
+
         
 <!--------------------------------------  Segunda parte da página  --------------------------------------------->
         
-        <section class="principais-recursos">
+        <section class="text-center" style="margin: 5% 0;">
             <h1>Principais Recursos</h1>
             <p class="subtitulo-desc">Tudo em um só lugar, pensando em você e na sua equipe!</p>
             <div class="pricipais-recursos-elementos">
@@ -114,7 +134,8 @@
                         <span class="p-r-e-icon"><i class="fa-solid fa-puzzle-piece fa-2x"></i></span>
                         <span class="p-r-e-titulo">Apps de Dashboard</span>
                         <p class="p-r-e-desc">Incorpore seus próprios aplicativos personalizados em um único painel.</p>
-                    </div>                    <div class="carousel__card">
+                    </div>
+                    <div class="carousel__card">
                         <span class="p-r-e-icon"><i class="fa-regular fa-comments fa-2x"></i></span>
                         <span class="p-r-e-titulo">Atendimento</span>
                         <p class="p-r-e-desc">Vincule suas ferramentas de atendimento em um só lugar.</p>
@@ -190,16 +211,20 @@
                         <p class="p-r-e-desc">Incorpore seus próprios aplicativos personalizados em um único painel.</p>
                     </div>
                 </div>
-            </section>
         </section>
-    </main>
 
 <!--------------------------------------  Terceira parte da página  ---------------------------------------------> 
-    <main class="main-tres">       
-        <div class="conteudo-tres">  
-            <img class="img-conteudo-tres" src="./assets/Cap.png" alt="teste">
+
+        <div class="container-fluid col text-center">
+            <div class="col">
+                <img class="img-conteudo-tres" src="./assets/Cap.png" alt="teste">
+                <a class="btn btn-primary col-2" role="button" href="https://www.chatwoot.com/features" target="_blank">Confira todos os recursos</a>
+            </div>
         </div>
-        <a href="https://www.chatwoot.com/features" target="_blank"><button class="btn-conteudo-tres">Confira todos os recursos</button></a>
+
+
+
+
         <div class="painel-metricas">
             <h1>Tenha as métricas da equipe no seu comando</h1>
             <div class="container-metricas">
@@ -207,20 +232,14 @@
                     <h2>Relatórios</h2>
                     <p>Veja o que está acontecendo atualmente com suas conversas e agentes, ou avalie quais rótulos ou caixas de entrada são os mais ativos e analise vários indicadores-chave importantes de desempenho no painel.</p>
                     <div class="items-cont-conteiner">
-                        <div class="icons-cont-container">
-                            <i class="fa-regular fa-circle-check"></i><br>
-                            <i class="fa-regular fa-circle-check"></i><br>
-                            <i class="fa-regular fa-circle-check"></i><br>
-                            <i class="fa-regular fa-circle-check"></i><br>
-                            <i class="fa-regular fa-circle-check"></i><br>
+                        <div class="lista-relatorios">
+                            <ol><i class="fa-regular fa-circle-check"></i> Relatório de Conversas</ol>
+                            <ol><i class="fa-regular fa-circle-check"></i> Relatório de Agentes</ol>
+                            <ol><i class="fa-regular fa-circle-check"></i> Relatório de Rótulos</ol>
+                            <ol><i class="fa-regular fa-circle-check"></i> Relatório de Caixa de Entrada</ol>
+                            <ol><i class="fa-regular fa-circle-check"></i> Relatório de Equipe</ol>
                         </div>
-                        <span>
-                        Relatório de Conversas<br>
-                        Relatório de Agentes<br>
-                        Relatório de Rótulos<br>
-                        Relatório de Caixa de Entrada<br>
-                        Relatório de Equipe</span>
-                        <img src="./assets/reports.webp" alt="" height="450px">
+                        <img src="./assets/reports.webp" alt="" height="400px">
                     </div>
                 </div>
             </div>
@@ -255,16 +274,251 @@
         </main>
     </main>
 <!--------------------------------------  Quarta parte da página  --------------------------------------------->
-    <main class="main-cinco">
-        <h1>Nossos planos</h1>
-        <p class="subtitulo-planos">Escolha o plano ideal para você.</p>
-                <div class="nossos-planos_items">
-                    <div class="planos_card"></div>
+<div class="container justify-content-center d-none d-lg-block">
+    <table class="table align-middle text-center">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" class="fs-6">Bronze</th>
+            <th scope="col" class="fs-6">Prata</th>
+            <th scope="col" class="fs-6">Ouro</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>
+                    <div class="card border-0 text-center">
+                        <div class="card-body">
+                          <span>R$ </span><span class="card-title fs-2">199</span><span class="align-top"> ,90</span>
+                          <p class="card-text text-black-50">5 Agentes</p>
+                          <a href="#" class="btn btn-primary">Assinar agora</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                        <div class="card border-0 text-center">
+                            <div class="card-body">
+                              <span>R$ </span><span class="card-title fs-2">249</span><span class="align-top"> ,90</span>
+                              <p class="card-text text-black-50">Agentes Ilimitados</p>
+                              <a href="#" class="btn btn-primary">Assinar agora</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                            <div class="card border-0 text-center">
+                                <div class="card-body">
+                                  <span>R$ </span><span class="card-title fs-2">349</span><span class="align-top"> ,90</span>
+                                  <p class="card-text text-black-50">Agentes Ilimitados</p>
+                                  <a href="#" class="btn btn-primary">Assinar agora</a>
+                                </div>
+                              </div>
+                            </td>
+            </tr>
+            <tr>
+                <th scope="row">Website Live Chat</th>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">E-mail</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Instagram</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></i></td>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Facebook</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Whatsapp</th>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">SMS</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Telegram</th>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">API Channel</th>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Automações</th>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c711;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Campanhas</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">Integrações</th>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-solid fa-minus" style="color: #8f8f8f;"></i></td>
+                <td><i class="fa-regular fa-circle-check" style="color: #00c763;"></i></td>
+            </tr>
+        </tbody>
+    </table>
+  </div> <!--- Fim Tabela de Planos --->
+  <!--- Cards de Planos --->
+  <div class="text-center d-lg-none row row-cols-1 row-cols-md-3 g-4 fs-5" style="margin: 2%;">
+    <div class="col">
+        <div class="card">
+            <div class="card-header" style="background-color: rgb(56, 132, 255); color: white">Plano Bronze</div>
+            <div class="card-body" style="margin: 5%;">
+              <div><span>R$ </span><span class="card-title" style="font-size: 55px; font-weight: 700;">199</span><span class="align-top"> ,90</span></div>
+              <p class="card-text text-black-50">5 Agentes</p></br>
+              <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Website Live Chat</p>
+              <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Whatsapp</p>
+              <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Telegram</p>
+              <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> API Channel</p>
+              <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Automações</p>
+              <a href="#" class="btn btn-primary fs-5" style="margin-top: 10%;">Assinar Agora</a>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+      <div class="card">
+          <div class="card-header" style="background-color: rgb(56, 132, 255); color: white">Plano Prata</div>
+          <div class="card-body" style="margin: 5%;">
+            <span>R$ </span><span class="card-title" style="font-size: 55px; font-weight: 700;">249</span><span class="align-top"> ,90</span>
+            <p class="card-text text-black-50">Agentes Ilimitados</p></br>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Website Live Chat</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> E-mail</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Whatsapp</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> SMS</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Telegram</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> API Channel</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Automações</p>
+            <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Campanhas</p>
+            <a href="#" class="btn btn-primary fs-5" style="margin-top: 10%;">Assinar Agora</a>
+          </div>
+        </div>
+  </div>
+  <div class="col">
+    <div class="card">
+        <div class="card-header" style="background-color: rgb(56, 132, 255); color: white">Plano Ouro</div>
+        <div class="card-body" style="margin: 5%;">
+          <span>R$ </span><span class="card-title" style="font-size: 55px; font-weight: 700;">349</span><span class="align-top"> ,90</span>
+          <p class="card-text text-black-50">Agentes Ilimitados</p></br>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Website Live Chat</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> E-mail</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Whatsapp</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> SMS</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Telegram</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> API Channel</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Automações</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Campanhas</p>
+          <p class="card-text"><i class="fa-regular fa-circle-check" style="color: #00c763;"></i> Integrações</p>
+          <a href="#" class="btn btn-primary fs-5" style="margin-top: 10%;">Assinar Agora</a>
+        </div>
+      </div>
+</div>
+  </div> <!--- Fim Cards de Planos --->
+  <div> <!-- Formulário de Contato -->
+    <section>
+          <div class="container"><img class="img-fluid" src="assets/img/offer/3.png" alt="" />
+            <div class="row mt-5 align-items-center">
+              <div class="col-md-6">
+                <h2 class="fs-md-4 fs-3 pt-3">We connect our customers with the best, and help them keep up-and stay open.</h2>
+              </div>
+              <div class="col-md-6">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item"></div>
+                  <h2 class="accordion-header border-bottom" id="srgdgfdgdgg45"><button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#srgdgfdgdgg45tyuu" aria-expanded="false" aria-controls="srgdgfdgdgg45"><span class="fs-1 pe-3">We connect our customers with the best?</span></button></h2>
+                  <div class="accordion-collapse collapse" aria-labelledby="srgdgfdgdgg45" data-bs-parent="#accordionFlushExample" id="srgdgfdgdgg45tyuu">
+                    <div class="accordion-body">
+                      <p class="mb-0">Placeholder content for this accordion, which is intended to demonstrate the accordion-flush class. This is the first item's accordion body.</p>
+                    </div>
+                  </div>
+                  <div class="accordion-item"></div>
+                  <h2 class="accordion-header border-bottom" id="sxvdgrfhfh276"><button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse" data-bs-target="#srgdgfdgdgg45tyuu5ghj" aria-expanded="false" aria-controls="sxvdgrfhfh276"><span class="fs-1 pe-3">Android research &amp; development rockstar? </span></button></h2>
+                  <div class="accordion-collapse collapse" aria-labelledby="sxvdgrfhfh276" data-bs-parent="#accordionFlushExample" id="srgdgfdgdgg45tyuu5ghj">
+                    <div class="accordion-body">
+                      <p class="mb-0">Placeholder content for this accordion, which is intended to demonstrate the accordion-flush class. This is the first item's accordion body.</p>
+                    </div>
+                  </div>
                 </div>
-    </main>
-<footer>
-  
-</footer>
+              </div>
+            </div>
+          </div><!-- end of .container-->
+        </section><!-- <section> close ============================-->
+        <!-- ============================================-->
 
+  </div> <!-- Fim Formulário de Contato -->
+  </body>
+  <footer class="bg-light text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Ficou com alguma dúvida? Entre em contato conosco.</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form5Example27" class="form-control" placeholder="Seu melhor e-mail">
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-primary mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 text-light bg-primary ">
+      © 2023 Todos os direitos reservados:
+      <a class="text-light" href="https://brzapps.com/">brz.apps</a>
+    </div>
+    <!-- Copyright -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </footer>
 </body>
 </html>
