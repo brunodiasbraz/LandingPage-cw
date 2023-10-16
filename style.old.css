@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --dark: rgb(51, 51, 51);
+    --azul: rgb(56, 132, 255);
+    --box-shadow: 4px 5px 11px rgba(56, 132, 255, 0.4);
+}
+
+/* background: linear-gradient( to bottom, white 50%, transparent); */
+
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html, body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-image: url(./assets/download.png);
+    background-size: 100% auto;
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.041);
+}
+
+.navbar-imagem{
+    height: 30px;
+}
+
+.navbar-conteudo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    color: var(--dark);
+}
+
+.btn-navbar{
+    background: var(--azul);
+    width: 130px;
+    height: 35px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.conteudo {
+    margin-bottom: 50px;
+   /* padding: 0px 180px; */
+}
+
+.conteudo-um{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 70px 180px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.conteudo-um-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-right: 100px;
+}
+
+.conteudo-um-texto h1{
+    font-size: 2.5rem;
+} /* Título do main */ 
+
+.conteudo-um-texto p{
+    font-size: 1.6rem;
+} /* Subtítulo do main */ 
+
+.btn-conteudo-um{
+    background: var(--azul);
+    width: 180px;
+    height: 50px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.img-conteudo-um {
+    height: 360px;
+}
+
+.principais-recursos{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 40px 0px;
+    max-width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main-tres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: -50px;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+.conteudo-tres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.img-conteudo-tres{
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.055);
+}
+
+.img-conteudo-tres:hover{
+    border: 10px solid rgba(39, 78, 255, 0.055);
+    transition: 200ms linear;
+}
+
+.btn-conteudo-tres{
+    background: var(--azul);
+    width: 230px;
+    height: 40px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.painel-metricas h1{
+    padding: 2%;
+    color: white;
+}
+
+.painel-metricas{
+    background-image: url(./assets/Frame.svg);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15%;
+}
+
+.container-metricas{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+}
+.cont-conteiner{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+}
+
+.cont-conteiner p{
+    padding: 10px 0;
+    width: 70%;
+}
+
+.items-cont-conteiner{
+    display: flex;
+    flex-direction: row;
+    /* background-color: brown; */
+    justify-content: space-between ;
+    gap: 1%;
+}
+
+.lista-relatorios{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+.lista-relatorios ol{
+    padding: 2% 0;
+    font-size: 14px;
+}
+
+.items-cont-conteiner img{
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.171);;
+}
+
+.main-quatro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-quatro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 6%;
+    margin: 0 9%;
+    justify-content: space-around;
+    border-radius: 15px;
+    background: linear-gradient(136deg, #010206 0%, #14265A 60.83%, #1D3884 100%);
+}
+
+.img-conteudo-quatro{
+    display: flex;
+    align-items: end;
+}
+
+.lojas-apps{
+    display: flex;
+    gap: 20px;
+    padding-top: 4%;
+    cursor: pointer;
+}
+
+.conteudo-suporte{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 0 20%;
+    align-items: center;
+}
+
+.conteudo-suporte h1{
+    font-size: 30px;
+    padding: 3% 10%;
+}
+
+.conteudo-suporte p{
+    font-size: 20px;
+    padding: 0 10%;
+}
+
+.texto-conteudo-quatro{
+    padding: 3% 0;
+}
+
+.img-celular{
+    margin-top: 15%;
+}
+
+.texto-conteudo-quatro h1{
+    background: linear-gradient(116deg, #00E5F7 0.67%, #1E95FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3%;
+    font-size: 26px;
+}
+
+.texto-conteudo-quatro p{
+    color: white;
+    padding-right: 40%;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.main-cinco{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 5% 0;
+}
+
+.subtitulo-planos{
+    font-size: 18px;
+}
+
+.nossos-planos_items{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.planos_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: #00eeff; */
+    padding: 5%;
+    
+}
+.div-servicos-disponiveis{
+    display: flex;
+    /* background-color: #8aa9ff; */
+    gap: 5%;
+    justify-content: space-around;
+    width: 300px;
+    padding: 1% 0;
+}
+
+.div-servicos-disponiveis span{
+    display: flex;
+    align-items: center;
+}
+
+.servicos-disponiveis{
+    font-size: 18px;
+    width: 250px;
+    text-align: center; 
+}
+
+.icones-card-planos{
+    margin-left: 6%;
+}
+
+.card-titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-desc{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    height: 200px;
+}
